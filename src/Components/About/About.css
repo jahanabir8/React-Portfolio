@@ -1,0 +1,7 @@
+.about__right .banner__btn button:last-child {
+    display: none;
+}
+
+.about__right .banner__btn{
+    justify-content: start;
+}

@@ -1,0 +1,15 @@
+.banner__btn button:last-child{
+    margin-left: 20px;
+    background: transparent;
+    color: #72E2AE;
+}
+
+.banner__btn button:last-child:hover{
+    background: #72E2AE;
+    color: #0E1C2F;
+}
+
+.banner__btn button:hover{
+    background: transparent;
+    color: #72E2AE;
+}
