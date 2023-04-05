@@ -12,8 +12,8 @@ const Menu = () => {
                     <div className='menu'>
                         <ul className='flex justify-between '>
                             <li className='text-[17px] font-[600] pr-[20px]'><a href='#!'>Home</a></li>
-                            <li className='text-[17px] font-[600] px-[20px]'><a href='#!'>About</a></li>
-                            <li className='text-[17px] font-[600] px-[20px]'><a href='#!'>Works</a></li>
+                            <li className='text-[17px] font-[600] px-[20px]'><a href='#about'>About</a></li>
+                            <li className='text-[17px] font-[600] px-[20px]'><a href='#work'>Works</a></li>
                             <li className='text-[17px] font-[600] pl-[20px]'><a href='#!'>Contact</a></li>
                         </ul>
                     </div>
