@@ -3,6 +3,7 @@ import Menu from './Components/Menu/Menu';
 import Banner from './Components/Banner/Banner';
 import About from './Components/About/About';
 import Skill from './Components/Skills/Skill';
+import Service from './Components/Service/Service';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner></Banner>
       <About></About>
       <Skill></Skill>
+      <Service></Service>
     </div>
   );
 }
