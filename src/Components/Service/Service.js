@@ -31,7 +31,7 @@ const Service = () => {
     ]
 
     return (
-        <section className='service__section py-[100px] bg-[#101B32]'>
+        <section className='service__section pb-[100px] bg-[#101B32]'>
             <div className='container'>
                 <div className='service__inner'>
                     <div className='section__title relative overflow-hidden pb-14 text-center'>
@@ -42,14 +42,16 @@ const Service = () => {
                         <span className='pointer-events-none absolute left-1/2 -top-2 z-0 -translate-x-1/2 transform text-9xl font-bold uppercase text-heading text-[#fff] opacity-5'>SERVICES</span>
                     </div>
 
-                    <div className="services grid grid-cols-3 gap-[30px]">
+                    <div className="services grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
                         {
                             services.map(service => {
                                 // const [icon, number, title, content] = service
                                 return(
-                                    <div className='service text-[#fff] bg-[#ffffff0a] p-[20px] border-[1px] border-[#4c4a4a] rounded-[8px]'>
+                                    <div className='service text-[#fff] bg-[#ffffff0a] p-[20px] border-[1px] border-[#4c4a4a] rounded-[8px]' key={service.id}>
                                         <div className='flex justify-between h-20'>
-                                            <span className='text-[40px] text-[#72E2AE] rounded-[50%] h-20 w-20 flex justify-center items-center bg-[#70ddaa3b]'>{service.icon}</span>
+                                            <div className='h-20 w-20 flex justify-center items-center'>
+                                                <span className='text-[40px] text-[#72E2AE] rounded-[50%] h-20 w-20 flex justify-center items-center bg-[#70ddaa3b] ease-in-out duration-300'>{service.icon}</span>
+                                            </div>
                                             <h3 className='font-[800] text-[40px] text-[#2C3445]'>{service.number}</h3>
                                         </div>
                                         <h4 className='text-[20px] font-[600] mt-[25px] mb-[18px]'>{service.title}</h4>
