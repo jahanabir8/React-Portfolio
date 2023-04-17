@@ -1,6 +1,6 @@
 import React from 'react';
-import { RiQuillPenLine } from 'react-icons/ri';
-import { FaCode } from 'react-icons/fa';
+import { RiQuillPenLine, RiSmartphoneLine } from 'react-icons/ri';
+import { BiCodeAlt } from 'react-icons/bi';
 
 const Service = () => {
 
@@ -14,15 +14,15 @@ const Service = () => {
         },
         {
             id : 2,
-            icon: <FaCode />,
-            number: '01',
+            icon: <BiCodeAlt />,
+            number: '02',
             title: 'Ui/Ux Design',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
         },
         {
             id : 3,
-            icon: < />,
-            number: '01',
+            icon: <RiSmartphoneLine />,
+            number: '03',
             title: 'Ui/Ux Design',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
         }
@@ -40,16 +40,18 @@ const Service = () => {
                         <span className='pointer-events-none absolute left-1/2 -top-2 z-0 -translate-x-1/2 transform text-9xl font-bold uppercase text-heading text-[#fff] opacity-5'>SERVICES</span>
                     </div>
 
-                    <div className="services">
+                    <div className="services grid grid-cols-3 gap-[20px]">
                         {
                             services.map(service => {
+                                // const [icon, number, title, content] = service
                                 return(
-                                    <div className='service'>
-                                        <div>
-                                            <span>{service.icon}</span>
-                                            <p>{service.number}</p>
+                                    <div className='service text-[#fff] bg-[#ffffff0a] p-[20px]'>
+                                        <div className='flex justify-between items-center'>
+                                            <span className='text-[40px] h-20 w-20 flex justify-center items-center'>{service.icon}</span>
+                                            <h3 className='font-bold text-[#2C3445] text-[36px]'>{service.number}</h3>
                                         </div>
-                                        
+                                        <h4 className='text-primary'>{service.title}</h4>
+                                        <p>{service.content}</p>
                                     </div>
                                 )
                             })
