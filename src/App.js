@@ -11,7 +11,7 @@ function App() {
       <Menu></Menu>
       <Banner></Banner>
       <About></About>
-      <Skill></Skill>
+      {/* <Skill></Skill> */}
       <Service></Service>
     </div>
   );
