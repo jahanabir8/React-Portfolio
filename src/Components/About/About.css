@@ -5,3 +5,15 @@
 .about__right .banner__btn{
     justify-content: start;
 }
+
+.about__animate{
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+      0% {left: 0;}
+      50% {left: 95%;}
+      100%{left:0}
+    }

@@ -1,4 +1,15 @@
 .navbar ul li button{
     padding: 5px 16px;
-    
+    color: #72E2AE;
+    background: #70ddaa3b;
+    /* color: #000; */
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.navbar ul li button:focus{
+    background: #72E2AE;
+    /* color: #70ddaa3b; */
+    color: #70ddaa3b;
 }
