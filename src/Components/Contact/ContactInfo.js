@@ -33,7 +33,7 @@ const cInfos = [
 
 const ContactInfo = () => {
     return (
-        <div className='grid grid-cols-2 gap-[30px]'>
+        <div className='grid md:grid-cols-2 gap-[30px]'>
             <div className='contact__info text-[#fff]'>
                 <div>
                     <h3 className='text-[24px] text-[#fff] font-[600] mb-[15px]'>Contact Information</h3>
