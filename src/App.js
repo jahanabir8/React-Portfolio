@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Skill from "./Components/Skills/Skill";
 import Service from "./Components/Service/Service";
 import Work from "./Components/Work/Work";
+import Review from "./Components/Review/Review";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <Skill></Skill> */}
       <Service></Service>
       <Work></Work>
+      <Review></Review>
     </div>
   );
 }

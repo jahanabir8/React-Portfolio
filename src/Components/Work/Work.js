@@ -2,6 +2,7 @@ import React from "react";
 import WorkFilter from "./WorkFilter";
 import "./Work.css";
 
+
 const Work = () => {
   return (
     <section className="work__section pb-[100px] bg-[#101B32]">

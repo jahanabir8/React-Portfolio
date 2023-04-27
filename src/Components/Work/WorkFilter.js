@@ -1,77 +1,100 @@
 import React, { useState } from "react";
+// import { FaLink } from 'react-icons/fa';
+import { FiGithub , FiLink } from 'react-icons/fi';
+
+
+
+import work1 from '../../Images/Works/Project1.png'
+import work2 from '../../Images/Works/Project2.png'
+import work3 from '../../Images/Works/Project3.png'
+import work4 from '../../Images/Works/Project4.png'
+import work5 from '../../Images/Works/Project5.png'
+import work6 from '../../Images/Works/Project6.png'
+import work7 from '../../Images/Works/Project7.png'
+import work8 from '../../Images/Works/Project8.png'
+import work9 from '../../Images/Works/Project9.png'
+import work10 from '../../Images/Works/Project10.png'
 
 const Datas = [
   {
     id: 1,
-    Name: "Samosa",
-    image:
-      "https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800",
-    Category: "BreakFast",
-    Price: "12$",
+    Name: "Tea Website",
+    image:work1,
+    Category: "WebDesign",
+    Type: "E-Commerce",
+    Conv: "PSD to HTML",
   },
   {
     id: 2,
-    Name: "Bread",
-    image:
-      "https://www.tasteofhome.com/wp-content/uploads/2018/01/Basic-Homemade-Bread_EXPS_TOHcom20_32480_C01_26_2b-63.jpg",
-    Category: "BreakFast",
-    Price: "12$",
+    Name: "Real Estate",
+    image:work2,
+    Category: "WebDesign",
+    Type: "Business",
+    Conv: "Figma to HTML",
   },
   {
     id: 3,
-    Name: "Porota",
-    image:
-      "https://c.ndtvimg.com/2023-01/qhqiliag_parotta_625x300_13_January_23.jpg",
-    Category: "BreakFast",
-    Price: "12$",
+    Name: "Bithu NFT",
+    image:work3,
+    Category: "WebDesign",
+    Type: 'NFT',
+    Conv: "Sketch to HTML",
   },
   {
     id: 4,
-    Name: "Fried Rice",
-    image:
-      "https://www.yummyoyummy.com/wp-content/uploads/2020/12/IMG_3623-scaled.jpg",
-    Category: "Launch",
-    Price: "12$",
+    Name: "Crypto NFT",
+    image:work4,
+    Category: "WebDesign",
+    Type: "NFT",
+    Conv: "Figma to HTML",
   },
   {
     id: 5,
-    Name: "Chow-Mein",
-    image:
-      "https://easycoolways.com/images/Easy_Recipe/Snacks/68_veg_chow_mein/4x3/veg-chow-mein.jpg",
-    Category: "Launch",
-    Price: "12$",
+    Name: "UI/X LMS",
+    image:work5,
+    Category: "WebDesign",
+    Type: "LMS",
+    Conv: "Figma to HTML",
   },
   {
     id: 6,
-    Name: "Soup with Wonthon",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/56cf7cfb0442626af6cd8f70/c8c5e302-961f-417f-8fd0-d29795829ef2/IMG_3240.jpg",
-    Category: "Launch",
-    Price: "12$",
+    Name: "Furniture",
+    image:work6,
+    Category: "WebDesign",
+    Type: "E-Commerce",
+    Conv: "Figma to HTML",
   },
   {
     id: 7,
-    Name: "Soup with Wonthon",
-    image:
-      "https://www.healthylittlefoodies.com/wp-content/uploads/2022/03/vegetable-rice-bowl-close.jpg",
-    Category: "Dinner",
-    Price: "12$",
+    Name: "DOJE",
+    image:work7,
+    Category: "React",
+    Type: "Doje Music Class",
+    Conv: "Figma to HTML",
   },
   {
     id: 8,
-    Name: "Kacchi",
-    image:
-      "https://c.ndtvimg.com/2019-06/s71ihu9_biryani_625x300_05_June_19.jpg",
-    Category: "Dinner",
-    Price: "12$",
+    Name: "Fashion & Style",
+    image:work8,
+    Category: "WebDesign",
+    Type: "E-Commerce",
+    Conv: "Sketch to HTML",
   },
   {
     id: 9,
-    Name: "Murog Polow",
-    image:
-      "https://www.thedeliciouscrescent.com/wp-content/uploads/2016/07/Saffron-Chicken-Zereshk-Polo-Square.jpg",
-    Category: "Dinner",
-    Price: "12$",
+    Name: "Merlin Medical Assistance",
+    image:work9,
+    Category: "React",
+    Type: "Medical",
+    Conv: "Sketch to HTML",
+  },
+  {
+    id: 10,
+    Name: "Wedding Site",
+    image:work10,
+    Category: "WebDesign",
+    Type: "Wedding",
+    Conv: "Sketch To HTML",
   },
 ];
 
@@ -93,10 +116,10 @@ const WorkFilter = () => {
             <button onClick={() => setItems(Datas)}>ALL</button>
           </li>
           <li className="">
-            <button onClick={() => filterItem("BreakFast")}>HTML & CSS</button>
+            <button onClick={() => filterItem("WebDesign")}>HTML & CSS</button>
           </li>
           <li>
-            <button onClick={() => filterItem("Launch")}>REACT JS</button>
+            <button onClick={() => filterItem("React")}>REACT JS</button>
           </li>
           <li className="">
             <button onClick={() => filterItem("Dinner")}>WORDPRESS</button>
@@ -104,16 +127,24 @@ const WorkFilter = () => {
         </ul>
       </div>
 
-      <div className="work__items grid grid-cols-3 gap-[30px]">
+      <div className="work__items grid grid-cols-2 lg:grid-cols-3 gap-[30px]">
         {items.map((item) => {
-          const { id, Name, image, Category, Price } = item;
+          const { id, Name, image, Type, Conv } = item;
           return (
-            <div className="item" key={id}>
-              <img className="h-[250px] w-[100%]" src={image} />
-              <div className="item__info p-[5px]">
-                <h4>Name: {Name}</h4>
-                <p>Category: {Category}</p>
-                <p>Price: {Price}</p>
+            <div className="item p-[20px] bg-[#ffffff0a] border-[1px] border-[#4c4a4a] rounded-[10px]" key={id}>
+              <div href="#!" className="relative work__hov overflow-hidden">
+                <a href="#!"><img className=" w-[100%]" src={image} /></a>
+                <div className="absolute work__prev h-[100%] w-[100%] bg-[#666666e8] top-0 right-[100%] flex justify-center items-center">
+                  <div className="text-[#fff] text-[25px] font-[bold] w-[66px] flex justify-between">
+                    <a href="#!"><FiLink/></a>
+                    <a href="#!"><FiGithub/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="item__info p-[5px] text-[#B3B2C1]">
+                <h4 className="text-[#fff] text-[20px] font-[600]">Name: {Name}</h4>
+                <p className="text-[18px] mt-[6px] mb-[4px]">Type: {Type}</p>
+                <p className="text-[18px]">Converted To: {Conv}</p>
               </div>
             </div>
           );

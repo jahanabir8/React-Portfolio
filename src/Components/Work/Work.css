@@ -3,13 +3,22 @@
     color: #72E2AE;
     background: #70ddaa3b;
     /* color: #000; */
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navbar ul li button:focus{
     background: #72E2AE;
     /* color: #70ddaa3b; */
-    color: #70ddaa3b;
+    /* color: #70ddaa3b; */
+    color: #000;
+}
+
+.work__prev{
+    transition: 0.4s ease-in-out;
+}
+
+.work__hov:hover .work__prev{
+    right: 0;
 }
