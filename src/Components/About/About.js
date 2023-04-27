@@ -55,8 +55,12 @@ const About = () => {
                     </div>
                     <div className='flex flex-wrap items-center'>
                         <div className='about__left w-[100%] lg:w-[50%] mb-[40px] lg-[mb-0px] pe-[0px] lg:pe-[15px]'>
-                            <div className='about__img'>
+                            <div className='about__img relative rounded-[12px] overflow-hidden'>
                                 <img className='border-[10px] rounded-[12px] border-[#72E2AE] border-opacity-20' src='https://tf-react-bieber.vercel.app/images/about-image.jpg' alt='img'/>
+                                <span className='en'></span>
+                                <span className='to'></span>
+                                <span className='te'></span>
+                                <span className='fo'></span>
                             </div>
                         </div>
                         <div className='about__right w-[100%] lg:w-[50%] ps-[0] lg:ps-[15px]'>

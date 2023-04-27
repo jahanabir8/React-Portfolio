@@ -1,5 +1,9 @@
 import React from 'react';
+
+import { GrStar } from "react-icons/gr";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './Review.css'
 
 import { FreeMode, Pagination } from "swiper";
 
@@ -52,7 +56,7 @@ const Clients = () => {
           clickable: true,
         }}
         modules={[FreeMode]}
-        className="mySwiper"
+        className="clientSwiper"
       >
 
         <div>
@@ -62,10 +66,13 @@ const Clients = () => {
                     return(
                         <div>
                             <SwiperSlide>
-                                <img src={review.img} alt="img" />
-                                <p>{review.name}</p>
-                                <p>{review.desc}</p>
-                                <p>{review.com}</p>
+                                <div className='pt-[70px] p-[20px] border-[1px] border-[#4c4a4a] rounded-[10px]'>
+                                    <img className='absolute h-[80px] w-[80px] border-[4px] border-[#72E2AE] rounded-[50%] absolute' src={review.img} alt="img" style={{top:"-40px"}}/>
+                                    <h4 className='text-[20px] font-[600]'>{review.name}</h4>
+                                    <p className='text-[#B3B3C0] mt-[3px] mb-[15px]'>{review.desc}</p>
+                                    <p className='w-[120px] text-[#FFD233] text-[20px] flex justify-between mb-[15px]'><GrStar/><GrStar/><GrStar/><GrStar/><GrStar/></p>
+                                    <p className='text-[17px] text-[#B3B3C0]'>{review.com}</p>
+                                </div>
                             </SwiperSlide>
                         </div>
                     )
@@ -73,15 +80,7 @@ const Clients = () => {
             }
         </div>
 
-        {/* <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
+
       </Swiper>
         </div>
     );
