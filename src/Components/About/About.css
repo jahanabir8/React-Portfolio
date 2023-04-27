@@ -19,19 +19,19 @@
     }
 
 .about__img span{
-    animation-duration: 3s;
+    animation-duration: 2.8s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     position: absolute;
     height: 10px;
     width: 50px;
-    background: #72E2AE;
 }
 
 .about__img span.en{
     animation-name: imageMove1;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    background: linear-gradient(260deg, #65C39B 1.36%, rgba(53, 89, 90, 0) 100%);
 }
 
 .about__img span.to{
@@ -40,11 +40,13 @@
     width: 10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    background: linear-gradient(0deg, #65C39B 1.36%, rgba(53, 89, 90, 0) 100%);
 }
 .about__img span.te{
     animation-name: imageMove3;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    background: linear-gradient(91.27deg, #65C39B 1.36%, rgba(53, 89, 90, 0) 100%);
 }
 .about__img span.fo{
     animation-name: imageMove4;
@@ -52,6 +54,7 @@
     width: 10px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    background: linear-gradient(180deg, #65C39B 1.36%, rgba(53, 89, 90, 0) 100%);
 }
 
 @keyframes imageMove1{

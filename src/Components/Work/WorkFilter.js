@@ -23,6 +23,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "E-Commerce",
     Conv: "PSD to HTML",
+    live: 'https://ecommercetea.netlify.app',
+    git: 'https://github.com/jahanabir8/Tea-Website',
   },
   {
     id: 2,
@@ -31,6 +33,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "Business",
     Conv: "Figma to HTML",
+    live: 'https://realestate0921.netlify.app',
+    git: 'https://github.com/jahanabir8/RealState-Site',
   },
   {
     id: 3,
@@ -39,6 +43,8 @@ const Datas = [
     Category: "WebDesign",
     Type: 'NFT',
     Conv: "Sketch to HTML",
+    live: "https://bithunft.netlify.app",
+    git: "https://github.com/jahanabir8/NFT-Bit",
   },
   {
     id: 4,
@@ -47,6 +53,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "NFT",
     Conv: "Figma to HTML",
+    live: "https://criptonft.netlify.app",
+    git: "https://github.com/jahanabir8/NFT-CRIPTO",
   },
   {
     id: 5,
@@ -55,6 +63,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "LMS",
     Conv: "Figma to HTML",
+    live: "https://forlms.netlify.app",
+    git: "https://github.com/jahanabir8/UI-X-LMS",
   },
   {
     id: 6,
@@ -63,6 +73,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "E-Commerce",
     Conv: "Figma to HTML",
+    live: "https://furniturecom123.netlify.app",
+    git: "https://github.com/jahanabir8/UI-X-LMS",
   },
   {
     id: 7,
@@ -71,6 +83,8 @@ const Datas = [
     Category: "React",
     Type: "Doje Music Class",
     Conv: "Figma to HTML",
+    live: "https://new-doja.netlify.app",
+    git: "https://github.com/jahanabir8/Doje",
   },
   {
     id: 8,
@@ -79,6 +93,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "E-Commerce",
     Conv: "Sketch to HTML",
+    live: "https://soft-pithivier-dfdd1b.netlify.app",
+    git: "https://github.com/jahanabir8/Fashion-Style",
   },
   {
     id: 9,
@@ -87,6 +103,8 @@ const Datas = [
     Category: "React",
     Type: "Medical",
     Conv: "Sketch to HTML",
+    live: "https://ivfafzal.netlify.app",
+    git: "",
   },
   {
     id: 10,
@@ -95,6 +113,8 @@ const Datas = [
     Category: "WebDesign",
     Type: "Wedding",
     Conv: "Sketch To HTML",
+    live: "https://wonderfulweddingsite.netlify.app",
+    git: "https://github.com/jahanabir8/Wedding-Site-TailWind",
   },
 ];
 
@@ -129,15 +149,15 @@ const WorkFilter = () => {
 
       <div className="work__items grid grid-cols-2 lg:grid-cols-3 gap-[30px]">
         {items.map((item) => {
-          const { id, Name, image, Type, Conv } = item;
+          const { id, Name, image, Type, Conv, live, git } = item;
           return (
             <div className="item p-[20px] bg-[#ffffff0a] border-[1px] border-[#4c4a4a] rounded-[10px]" key={id}>
               <div href="#!" className="relative work__hov overflow-hidden">
                 <a href="#!"><img className=" w-[100%]" src={image} /></a>
                 <div className="absolute work__prev h-[100%] w-[100%] bg-[#666666e8] top-0 right-[100%] flex justify-center items-center">
                   <div className="text-[#fff] text-[25px] font-[bold] w-[66px] flex justify-between">
-                    <a href="#!"><FiLink/></a>
-                    <a href="#!"><FiGithub/></a>
+                    <a href={live} target="_blank"><FiLink/></a>
+                    <a href={git} target="_blank"><FiGithub/></a>
                   </div>
                 </div>
               </div>
