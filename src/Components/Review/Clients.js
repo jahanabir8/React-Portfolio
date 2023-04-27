@@ -47,7 +47,7 @@ const Clients = () => {
     return (
         <div className='text-[#FFF]'>
             <Swiper
-        slidesPerView={3}
+        slidesPerView={3}   
         spaceBetween={30}
         freeMode={true}
         navigation={true}
