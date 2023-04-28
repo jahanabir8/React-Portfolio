@@ -5,7 +5,7 @@ import "./Work.css";
 
 const Work = () => {
   return (
-    <section className="work__section pb-[100px] bg-[#101B32]">
+    <section id="work" className="work__section pb-[100px] bg-[#101B32]">
       <div className="container">
         <div className="work__inner">
           <div className="section__title relative overflow-hidden pb-14 text-center">
