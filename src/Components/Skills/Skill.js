@@ -2,6 +2,7 @@ import React from "react";
 import MyCircleProgressComponent from "./MyCircleProgressComponent";
 import ProgressCircle from "./ProgressCircle";
 import "./Skill.css";
+import LineProgress from "./LineProgress";
 
 const Skill = () => {
   return (
@@ -38,6 +39,9 @@ const Skill = () => {
                 </h4>
               </div>
             ))}
+          </div>
+          <div>
+            <LineProgress></LineProgress>
           </div>
         </div>
       </div>
