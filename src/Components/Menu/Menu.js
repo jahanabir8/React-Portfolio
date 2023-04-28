@@ -1,5 +1,7 @@
 import React from 'react';
+import { HiMenu } from 'react-icons/hi';
 import './Menu.css'
+import MobileMenu from './MobileMenu';
 
 const Menu = () => {
     return (
@@ -10,7 +12,7 @@ const Menu = () => {
                         {/* <a href='#!'><img src='https://dora-react.vercel.app/images/logo.png' alt='img'/></a> */}
                         <a className='text-[40px] text-[#72E2AE] font-bold' href='#!'>MEDEV</a>
                     </div>
-                    <div className='menu'>
+                    <div className='menu hidden md:block'>
                         <ul className='flex justify-between '>
                             <li className='text-[17px] font-[600] pr-[20px]'><a href='#!'>Home</a></li>
                             <li className='text-[17px] font-[600] px-[20px]'><a href='#about'>About</a></li>
@@ -18,8 +20,12 @@ const Menu = () => {
                             <li className='text-[17px] font-[600] pl-[20px]'><a href='#contact'>Contact</a></li>
                         </ul>
                     </div>
+                    <div className="menu__icon block md:hidden">
+                        <span className='text-[28px] font-bold cursor-pointer'><HiMenu/></span>
+                    </div>
                 </div>
             </div>
+            {/* <MobileMenu></MobileMenu> */}
         </div>
     );
 };
