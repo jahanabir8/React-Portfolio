@@ -27,7 +27,7 @@ const cInfos = [
         id: 3,
         icon: <TiLocationOutline />,
         title: 'Contact address',
-        num: 'Prabal Housing, Adabor, Mohammadpur, Dhaka'
+        num1: 'Prabal Housing, Adabor, Mohammadpur, Dhaka'
     },
 ]
 

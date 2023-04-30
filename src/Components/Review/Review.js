@@ -3,7 +3,7 @@ import Clients from "./Clients";
 
 const Review = () => {
   return (
-    <div className="review__section pb-[100px] bg-[#101B32]">
+    <div className="review__section pb-[100px]">
       <div className="container">
         <div className="review__inner">
           <div className="section__title relative overflow-hidden pb-14 text-center">

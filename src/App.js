@@ -8,6 +8,7 @@ import Work from "./Components/Work/Work";
 import Review from "./Components/Review/Review";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Banner></Banner>
       <About></About>
       <Skill></Skill>
+      <Resume></Resume>
       <Service></Service>
       <Work></Work>
       <Review></Review>

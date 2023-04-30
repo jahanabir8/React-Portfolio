@@ -43,7 +43,7 @@ const About = () => {
     ]
 
     return (
-        <section id="about" className='about__section pb-[100px] bg-[#101B32]'>
+        <section id="about" className='about__section pb-[100px]'>
             <div className='container'>
                 <div className='about__inner'>
                     <div className='section__title relative overflow-hidden pb-14 text-center'>

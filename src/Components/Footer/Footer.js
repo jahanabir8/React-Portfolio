@@ -31,7 +31,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <div className='footer__section bg-[#101B32] py-[20px] border-t-[1px] border-[#4c4a4a]'>
+        <div className='footer__section py-[20px] border-t-[1px] border-[#4c4a4a]'>
             <div className="container">
                 <div className="footer__inner flex flex-col sm:flex-row sm:justify-between items-center">
                     <ul className='flex w-[250px] justify-between mb-[10px] sm:mb-[0]'>

@@ -6,7 +6,7 @@ import LineProgress from "./LineProgress";
 
 const Skill = () => {
   return (
-    <section className="skill__section bg-[#101B32] pb-[100px]">
+    <section className="skill__section pb-[100px]">
       <div className="container">
         <div className="skill__inne">
           <div className="section__title relative overflow-hidden pb-14 text-center">
@@ -41,7 +41,7 @@ const Skill = () => {
             ))}
           </div>
           <div>
-            <LineProgress></LineProgress>
+            {/* <LineProgress></LineProgress> */}
           </div>
         </div>
       </div>

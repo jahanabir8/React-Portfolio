@@ -31,7 +31,7 @@ const Service = () => {
     ]
 
     return (
-        <section className='service__section pb-[100px] bg-[#101B32]'>
+        <section className='service__section pb-[100px]'>
             <div className='container'>
                 <div className='service__inner'>
                     <div className='section__title relative overflow-hidden pb-14 text-center'>

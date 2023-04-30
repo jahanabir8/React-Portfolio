@@ -3,7 +3,7 @@ import ContactInfo from './ContactInfo';
 
 const Contact = () => {
     return (
-        <div id='contact' className='contact__section pb-[100px] bg-[#101B32]'>
+        <div id='contact' className='contact__section pb-[100px]'>
             <div className="container">
                 <div className="contact__inner">
                     <div className="section__title relative overflow-hidden pb-14 text-center">

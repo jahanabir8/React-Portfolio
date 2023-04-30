@@ -4,7 +4,7 @@ import BannerBtn from './BannerBtn';
 
 const Banner = () => {
     return (
-        <section className='banner__section pt-[140px] lg:pt-[0] bg-[#0E1C2F] h-[100%] lg:h-[100vh] flex'>
+        <section className='banner__section pt-[140px] lg:pt-[0] h-[100%] lg:h-[100vh] flex'>
             <div className='container'>
                 <div className='banner__inner'>
                     <div className='flex-wrap lg:flex items-center'>
