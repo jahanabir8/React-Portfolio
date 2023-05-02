@@ -12,21 +12,21 @@ const Service = () => {
             icon: <RiQuillPenLine />,
             number: '01',
             title: 'WordPress',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+            content: 'Custom WordPress solutions tailored to your needs. Showcase your brand with a professionally designed portfolio.'
         },
         {
             id : 2,
             icon: <BiCodeAlt />,
             number: '02',
             title: 'Web Design',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+            content: 'Web design" is the process of creating websites. It encompasses several different aspects, including webpage layout, content production, and graphic design'
         },
         {
             id : 3,
             icon: <RiSmartphoneLine />,
             number: '03',
             title: 'Web Development',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue diam etiam venenatis mi tristique amet cras diam etiam.'
+            content: 'Building dynamic and responsive user interfaces using React components and modern web development technologies.'
         }
     ]
 

@@ -15,30 +15,30 @@ const reviews = [
     {
         id: 1,
         img: 'https://tf-react-bieber.vercel.app/images/user-avatar-3.png',
-        name: 'John Doe',
-        desc: 'Client-envato.com',
-        com : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque iste omnis quidem voluptatibus et reprehenderit numquam hic eos tempore dolore, libero ipsum consectetur nobis repellendus, provident facere quas voluptatum.'
+        name: 'Aline Gomez',
+        desc: 'Fiverr',
+        com : "Excellent experience working with Abir. He turned my design concepts into a functional website that exceeded my expectations. Highly recommended for anyone in need of a reliable front-end developer."
     },
     {
         id: 2,
         img: 'https://tf-react-bieber.vercel.app/images/user-avatar-3.png',
-        name: 'John Doe',
-        desc: 'Client-envato.com',
-        com : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque iste omnis quidem voluptatibus et reprehenderit numquam hic eos tempore dolore, libero ipsum consectetur nobis repellendus, provident facere quas voluptatum.'
+        name: 'Ibna Nahin',
+        desc: 'Fiverr',
+        com : "Abir did an amazing job creating a user-friendly website for my business. They were responsive, communicative, and had a great eye for design. I would definitely work with them again and recommend them to others.",
     },
     {
         id: 3,
         img: 'https://tf-react-bieber.vercel.app/images/user-avatar-3.png',
-        name: 'John Doe',
-        desc: 'Client-envato.com',
-        com : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque iste omnis quidem voluptatibus et reprehenderit numquam hic eos tempore dolore, libero ipsum consectetur nobis repellendus, provident facere quas voluptatum.'
+        name: 'Arafat Farhad',
+        desc: 'Fiverr',
+        com : "I had a complex website project and Abir exceeded my expectations. They were professional, communicative, and provided valuable input to improve the website's design and functionality. Highly recommend this top-notch front-end developer."
     },
     {
         id: 4,
         img: 'https://tf-react-bieber.vercel.app/images/user-avatar-3.png',
-        name: 'John Doe',
-        desc: 'Client-envato.com',
-        com : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque iste omnis quidem voluptatibus et reprehenderit numquam hic eos tempore dolore, libero ipsum consectetur nobis repellendus, provident facere quas voluptatum.'
+        name: 'Nancy Howel',
+        desc: 'Fiverr',
+        com : "I had a great experience working with Abir on my website project. They were able to take my vision and turn it into a beautifully designed and functional website. Abir was also very responsive and easy to work with throughout the entire process. I highly recommend them for any front-end development needs."
     }
 
 ];

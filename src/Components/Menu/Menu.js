@@ -10,7 +10,7 @@ const Menu = () => {
                 <div className='navBar__inner flex justify-between items-center'>
                     <div className='logo'>
                         {/* <a href='#!'><img src='https://dora-react.vercel.app/images/logo.png' alt='img'/></a> */}
-                        <a className='text-[40px] text-[#72E2AE] font-bold' href='#!'>MEDEV</a>
+                        <a className='text-[40px] text-[#fff] font-bold' href='#!'>ME<span className='text-[#72E2AE]'>DEV</span></a>
                     </div>
                     <div className='menu hidden md:block'>
                         <ul className='flex justify-between '>

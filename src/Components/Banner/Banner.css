@@ -13,3 +13,26 @@
     background: transparent;
     color: #72E2AE;
 }
+
+.banner__right .anime__icon{
+    animation-name: icon;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon{
+    0%{margin-top: 50px;} 50%{margin: 0;} 100%{margin-top: 50px;}
+}
+
+.react__icon{
+    -webkit-animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
