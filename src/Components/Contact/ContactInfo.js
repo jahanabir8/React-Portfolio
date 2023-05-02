@@ -11,8 +11,11 @@ const cInfos = [
         id: 1,
         icon: <MdCall />,
         title: 'Contact on phone',
-        num1: '01318821272',
-        num2: '01318821272'
+        num1: '01318-821272',
+        href1: 'tel:+8801318821272',
+        num2: '01610-158112',
+        href2: 'tel:+8801610158112'
+
     },
 
     {
@@ -20,14 +23,17 @@ const cInfos = [
         icon: <MdMailOutline />,
         title: 'Contact on mail',
         num1: 'jahanabir886@gmail.com',
-        num2: 'jahanabir886@gmail.com'
+        href1: 'mailto:jahanabir886@gmail.com',
+        num2: 'jahanabir886@gmail.com',
+        href2: 'mailto:jahanabir886@gmail.com',
     },
 
     {
         id: 3,
         icon: <TiLocationOutline />,
         title: 'Contact address',
-        num1: 'Prabal Housing, Adabor, Mohammadpur, Dhaka'
+        num1: 'Prabal Housing, Adabor, Mohammadpur, Dhaka',
+        href1: 'https://goo.gl/maps/1NWZ8nLuPbrAVe7m9'
     },
 ]
 
@@ -37,18 +43,19 @@ const ContactInfo = () => {
             <div className='contact__info text-[#fff]'>
                 <div>
                     <h3 className='text-[24px] text-[#fff] font-[600] mb-[15px]'>Contact Information</h3>
-                    <p className='text-[#BCBBC8] max-w-[520px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, iusto harum possimus non praesentium qui facere.</p>
+                    <p className='text-[#BCBBC8] max-w-[520px]'>Connect with me using the contact form below. <br />
+Get in touch with me through the contact form on this page.</p>
                     <p className='h-[4px] w-[100px] bg-[#254047] rounded-[25px] mb-[30px] mt-[20px]'></p>
                 </div>
                 <div>
                     {
                         cInfos.map(cInfo => (
-                            <div className='flex items-start mb-[20px] p-[20px] bg-[#1B2336] border-[1px] border-[#4c4a4a] rounded-[10px]'>
+                            <div key={cInfo.id} className='flex items-start mb-[20px] p-[20px] bg-[#1B2336] border-[1px] border-[#4c4a4a] rounded-[10px]'>
                                 <span className='h-[70px] w-[70px] flex justify-center items-center text-[#5FB892] text-[30px] bg-[#253742] rounded-[50%] me-[20px]'>{cInfo.icon}</span>
                                 <div>
                                     <h4 className='text-[23px] font-[600] mb-[10px]'>{cInfo.title}</h4>
-                                    <p className='text-[#BCBBC8] mb-[7px]'>{cInfo.num1}</p>
-                                    <p className='text-[#BCBBC8]'>{cInfo.num2}</p>
+                                    <a target='_blank' href={cInfo.href1} className='text-[#BCBBC8] mb-[7px]'>{cInfo.num1}</a> <br />
+                                    <a target='_blank' href={cInfo.href2} className='text-[#BCBBC8]'>{cInfo.num2}</a>
                                 </div>
                             </div>
                         ))

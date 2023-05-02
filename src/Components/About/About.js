@@ -68,7 +68,7 @@ const About = () => {
 
                             <ul className='text-[#BFBECB] text-[17px] font-[600] mb-[20px]'>
                                 {
-                                    details.map(detail => <li className='flex mb-[8px]'><span className='w-[120px]'>{detail.span1}</span> <span>: {detail.span2}</span></li>)
+                                    details.map(detail => <li key={detail.id} className='flex mb-[8px]'><span className='w-[120px]'>{detail.span1}</span> <span>: {detail.span2}</span></li>)
                                 }
                             </ul>
                             <BannerBtn></BannerBtn>

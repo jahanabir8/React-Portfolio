@@ -1,15 +1,15 @@
-.banner__btn button:last-child{
+.banner__btn a:last-child{
     margin-left: 20px;
     background: transparent;
     color: #72E2AE;
 }
 
-.banner__btn button:last-child:hover{
+.banner__btn a:last-child:hover{
     background: #72E2AE;
     color: #0E1C2F;
 }
 
-.banner__btn button:hover{
+.banner__btn a:hover{
     background: transparent;
     color: #72E2AE;
 }

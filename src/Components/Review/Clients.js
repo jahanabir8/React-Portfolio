@@ -65,7 +65,7 @@ const Clients = () => {
                     // const [id, img, name, desc, com] = review
                     return(
                         <div>
-                            <SwiperSlide>
+                            <SwiperSlide key={review.id}>
                                 <div className='pt-[70px] p-[20px] border-[1px] border-[#4c4a4a] rounded-[10px]'>
                                     <img className='absolute h-[80px] w-[80px] border-[4px] border-[#72E2AE] rounded-[50%] absolute' src={review.img} alt="img" style={{top:"-40px"}}/>
                                     <h4 className='text-[20px] font-[600]'>{review.name}</h4>

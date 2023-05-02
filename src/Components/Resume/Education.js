@@ -8,21 +8,21 @@ const Education = () => {
             id: 1,
             year: '2014-2016',
             deg: 'Secondary School Certificate',
-            ins: 'Abc College.',
+            ins: 'Cumilla Modern High School',
             des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
         },
         {
             id: 2,
             year: '2016-2018',
             deg: 'Higher School Certificate',
-            ins: 'Abc College.',
+            ins: 'Cantonment Board Collage, Cumilla',
             des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
         },
         {
             id: 3,
             year: '2018-2022',
             deg: 'Bachelor of Science',
-            ins: 'Abc College.',
+            ins: 'Guangxi Science & Tech Normal University, Guangxi-China',
             des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
         },
     ]
@@ -38,7 +38,7 @@ const Education = () => {
                     {
                         details.map(detail =>{
                             return(
-                               <div className="timeline__box flex gap-[50px] mb-[30px]">
+                               <div key={detail.id} className="timeline__box flex gap-[50px] mb-[30px]">
                                     <div>
                                         <div className="timelineHead pe-[63px]">
                                             <p className="w-[115px] py-[2px] text-center text-[14px] font-[600] text-[#898F9C] bg-[#1D2D3B] rounded-[20px]">{detail.year}</p>

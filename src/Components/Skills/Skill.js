@@ -28,7 +28,7 @@ const Skill = () => {
               { id: 2, percentage: 70, title: "Front-End Development" },
               { id: 3, percentage: 75, title: "WordPress" },
             ].map((i) => (
-              <div className="w-[320px] bg-[#1C2336] border-[1px] border-[#4c4a4a] rounded-[5px] p-[20px]">
+              <div key={i.id} className="w-[320px] bg-[#1C2336] border-[1px] border-[#4c4a4a] rounded-[5px] p-[20px]">
                 <ProgressCircle
                   strokeWidth={10}
                   percentage={i.percentage}

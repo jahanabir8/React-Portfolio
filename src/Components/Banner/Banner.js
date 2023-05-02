@@ -13,7 +13,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <section className='banner__section pb-[100px] pt-[140px] lg:pt-[0] h-[100%] lg:h-[85vh] flex'>
+        <section className='banner__section pb-[80px] pt-[140px] lg:pt-[0] h-[100%] lg:h-[85vh] flex'>
             <div className='container'>
                 <div className='banner__inner'>
                     <div className='flex-wrap lg:flex items-center'>
@@ -44,15 +44,12 @@ const Banner = () => {
                                 <span className='anime__icon absolute top-[20px] left-0 h-[70px] w-[70px] text-[50px] flex justify-center items-center text-[#FF5733] border-[3px] border-[#FF5733] rounded-[50%]'>
                                     <AiOutlineHtml5/>
                                 </span>
-
                                 <span className='anime__icon absolute top-[60px] right-0 h-[70px] w-[70px] text-[50px] flex justify-center items-center text-[#F0DB4F] border-[3px] border-[#F0DB4F] rounded-[50%]'>
                                     <TbBrandJavascript/>
                                 </span>
-
                                 <span className='react__icon absolute bottom-0 right-0 h-[70px] w-[70px] text-[50px] flex justify-center items-center text-[#61DAFB] border-[3px] border-[#61DAFB] rounded-[50%]'>
                                     <FaReact/>
                                 </span>
-                                
                             </div>
                         </div>
                     </div>
