@@ -9,14 +9,14 @@ const Experience = () => {
             year: '2021 to Present',
             deg: 'Front-End Web Developer',
             ins: 'Opedia Technologies',
-            des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+            des: 'As a front-end web developer at Opedia Technology for over a year, I have been responsible for creating visually appealing and user-friendly websites using cutting-edge technologies. My role has allowed me to enhance my skills and keep up with the latest trends in web development.'
         },
         {
             id: 2,
             year: '2020 to Present',
             deg: 'Web Designer',
             ins: 'Fiverr',
-            des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+            des: "As a full-time web designer on Fiverr, I specialize in using HTML, CSS, and JS to create visually appealing and responsive websites that meet my clients' needs. With my expertise, I can help bring your vision to life on the web."
         },
     ]
 

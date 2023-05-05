@@ -9,21 +9,21 @@ const Education = () => {
             year: '2014-2016',
             deg: 'Secondary School Certificate',
             ins: 'Cumilla Modern High School',
-            des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+            des: 'I completed my secondary school certificate from Cumilla Modern High School, where I gained a solid foundation in various subjects. This education has played a crucial role in shaping my skills and knowledge in both academic and personal aspects.'
         },
         {
             id: 2,
             year: '2016-2018',
             deg: 'Higher School Certificate',
             ins: 'Cantonment Board Collage, Cumilla',
-            des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+            des: 'I completed my Higher Secondary Certificate (HSC) education from Cantonment Board Collage. During my time there, I gained a strong foundation in various subjects and developed important skills that have helped me in my personal and professional life.'
         },
         {
             id: 3,
             year: '2018-2022',
             deg: 'Bachelor of Science',
             ins: 'Guangxi Science & Tech Normal University, Guangxi-China',
-            des: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur donec gravida ullamcorper cum id. Sit viverra donec in ornare euismod.'
+            des: 'I am proud to have completed my BSc degree from GXSTNU, which has equipped me with a strong foundation in my field of study. Through my education, I have gained valuable knowledge and skills that I am eager to apply in my career.'
         },
     ]
 
