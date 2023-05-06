@@ -45,3 +45,21 @@
     right: -29px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 639px) {
+    /* .timelineHead::after,  */
+    .timelineHead::before{
+        display: none;
+    }
+
+    .timelineHere{
+        padding-left: 30px;
+    }
+
+    .timelineHere::before{
+        left: 10px;
+    }
+    .timelineHead::after{
+        left: -28px;
+    }
+}

@@ -45,40 +45,53 @@ const reviews = [
 
 const Clients = () => {
     return (
-        <div className='text-[#FFF]'>
-            <Swiper
-        slidesPerView={3}   
-        spaceBetween={30}
-        freeMode={true}
-        navigation={true}
-        loop = {true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode]}
-        className="clientSwiper"
-      >
+            <div className='text-[#FFF]'>
+                <Swiper
+            // slidesPerView={3}   
+            spaceBetween={30}
+            freeMode={true}
+            navigation={true}
+            loop = {true}
+            pagination={{
+            clickable: true,
+            }}
+            modules={[FreeMode]}
+            className="clientSwiper"
+            breakpoints={{
+              992:{
+                slidesPerView: 3,
+              },
+              
+              600: {
+                slidesPerView: 2,
+              },
+              
+              0: {
+                slidesPerView: 1,
+              }
+            }}
+        >
 
-        <div>
-            {
-                reviews.map((review)=>{
-                    // const [id, img, name, desc, com] = review
-                    return(
-                        <div>
-                            <SwiperSlide key={review.id}>
-                                <div className='pt-[70px] p-[20px] border-[1px] border-[#4c4a4a] rounded-[10px]'>
-                                    <img className='absolute h-[80px] w-[80px] border-[4px] border-[#72E2AE] rounded-[50%] absolute' src={review.img} alt="img" style={{top:"-40px"}}/>
-                                    <h4 className='text-[20px] font-[600]'>{review.name}</h4>
-                                    <p className='text-[#B3B3C0] mt-[3px] mb-[15px]'>{review.desc}</p>
-                                    <p className='w-[120px] text-[#FFD233] text-[20px] flex justify-between mb-[15px]'><GrStar/><GrStar/><GrStar/><GrStar/><GrStar/></p>
-                                    <p className='text-[17px] text-[#B3B3C0]'>{review.com}</p>
-                                </div>
-                            </SwiperSlide>
-                        </div>
-                    )
-                })
-            }
-        </div>
+            <div>
+                {
+                    reviews.map((review)=>{
+                        // const [id, img, name, desc, com] = review
+                        return(
+                            <div>
+                                <SwiperSlide key={review.id}>
+                                    <div className='pt-[70px] p-[20px] border-[1px] border-[#4c4a4a] rounded-[10px]'>
+                                        <img className='absolute h-[80px] w-[80px] border-[4px] border-[#72E2AE] rounded-[50%] absolute' src={review.img} alt="img" style={{top:"-40px"}}/>
+                                        <h4 className='text-[20px] font-[600]'>{review.name}</h4>
+                                        <p className='text-[#B3B3C0] mt-[3px] mb-[15px]'>{review.desc}</p>
+                                        <p className='w-[120px] text-[#FFD233] text-[20px] flex justify-between mb-[15px]'><GrStar/><GrStar/><GrStar/><GrStar/><GrStar/></p>
+                                        <p className='text-[17px] text-[#B3B3C0]'>{review.com}</p>
+                                    </div>
+                                </SwiperSlide>
+                            </div>
+                        )
+                    })
+                }
+            </div>
 
 
       </Swiper>
