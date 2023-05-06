@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 import './Menu.css'
 import MobileMenu from './MobileMenu';
 
 const Menu = () => {
+    const [clicked, setClicked] = useState(false);
     return (
         <div className='nav__bar py-[10px] text-[#fff] fixed w-[100%] left-0 top-0 bg-[#0E1C2F] z-[999]'>
             <div className='container'>
@@ -20,12 +21,12 @@ const Menu = () => {
                             <li className='text-[17px] font-[600] pl-[20px]'><a href='#contact'>Contact</a></li>
                         </ul>
                     </div>
-                    <div className="menu__icon block md:hidden">
+                    <div className="menu__icon block md:hidden" onClick={()=>setClicked(true)}>
                         <span className='text-[28px] font-bold cursor-pointer'><HiMenu/></span>
                     </div>
                 </div>
             </div>
-            {/* <MobileMenu></MobileMenu> */}
+            <MobileMenu clicked={clicked} setClicked={setClicked}></MobileMenu>
         </div>
     );
 };

@@ -40,8 +40,20 @@ const Skill = () => {
               </div>
             ))}
           </div>
-          <div>
-            {/* <LineProgress></LineProgress> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] gap-y-[20px] sm:gap-y-[30px] mt-[50px]">
+            {[
+              {pers: '90', sub: 'HTML5'}, 
+              {pers: '73', sub: 'CSS3'}, 
+              {pers: '80', sub: 'JavaScript'}, 
+              {pers: '88', sub: 'React Js'},
+              // {pers: '59', sub: 'Next Js'} , 
+              // {pers: '82', sub: 'PHP, Laravel'} , 
+            ].map(i=>
+                <div>
+                  <p className="text-[#fff] text-[18px]">{i.sub} {i.pers}%</p>
+                  <LineProgress percentage={i.pers}></LineProgress>
+                </div>
+                )}
           </div>
         </div>
       </div>

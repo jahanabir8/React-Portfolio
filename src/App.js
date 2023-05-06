@@ -13,7 +13,7 @@ import Resume from "./Components/Resume/Resume";
 function App() {
   return (
     <div className="App">
-      {/* <Menu></Menu> */}
+      <Menu></Menu>
       <Banner></Banner>
       <About></About>
       <Skill></Skill>

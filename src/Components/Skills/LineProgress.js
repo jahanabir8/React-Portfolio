@@ -1,14 +1,13 @@
 import React from 'react';
 import './Nnn.css'
 
-const LineProgress = () => {
-    const Progress = ({done}) => {
+const LineProgress = ({percentage}) => {
         const [style, setStyle] = React.useState({});
         
         setTimeout(() => {
             const newStyle = {
                 opacity: 1,
-                width: `${done}%`
+                width: `${percentage}%`
             }
             
             setStyle(newStyle);
@@ -16,19 +15,14 @@ const LineProgress = () => {
         
         return (
             <div className="progress">
+                {/* <p>asdf</p> */}
                 <div className="progress-done" style={style}>
-                    {done}%
+                    {/* {percentage} */}
                 </div>
             </div>
+            
         )
-    }
-    
-    const App = () => (
-        <>
-            <h1>React Progress Bar</h1>
-            <Progress done="70"/>
-        </>
-    );
+
 };
 
 export default LineProgress;
